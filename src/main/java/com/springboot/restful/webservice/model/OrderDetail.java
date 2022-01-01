@@ -2,12 +2,16 @@ package com.springboot.restful.webservice.model;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class OrderDetail {
+	
+	@Id
+	private Long id;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JsonIgnore
@@ -66,11 +70,21 @@ public class OrderDetail {
 		this.agentCommissionAmount = agentCommissionAmount;
 	}
 
+	
+	public Long getId() {
+		return id;
+	}
+
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 
 	@Override
 	public String toString() {
-		return "OrderDetail [order=" + order + ", product=" + product + ", orderCount=" + orderCount + ", amount="
-				+ amount + ", agentCommissionAmount=" + agentCommissionAmount + "]";
+		return "OrderDetail [id=" + id + ", order=" + order + ", product=" + product + ", orderCount=" + orderCount
+				+ ", amount=" + amount + ", agentCommissionAmount=" + agentCommissionAmount + "]";
 	}
-	
+
 }

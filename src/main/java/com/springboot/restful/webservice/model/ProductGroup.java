@@ -7,7 +7,7 @@ import javax.persistence.Id;
 public class ProductGroup {
 	
 	@Id
-	private Long id;
+	private Integer id;
 	private String name;
 	private String description;
 	private boolean isPhysical;
@@ -16,11 +16,12 @@ public class ProductGroup {
 		super();
 	}
 
-	public Long getId() {
+	
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -47,6 +48,7 @@ public class ProductGroup {
 	public void setPhysical(boolean isPhysical) {
 		this.isPhysical = isPhysical;
 	}
+
 
 	@Override
 	public String toString() {

@@ -25,6 +25,7 @@ public class Product {
 	private Agent agent;
 	private Float agentCommissionRate;
 	private boolean needFirstAidVideo;
+	private Long stockCount;
 	
 	public Product() {
 		super();
@@ -84,12 +85,20 @@ public class Product {
 	public void setAgent(Agent agent) {
 		this.agent = agent;
 	}
+	
+	public Long getStockCount() {
+		return stockCount;
+	}
+
+	public void setStockCount(Long stockCount) {
+		this.stockCount = stockCount;
+	}
 
 	@Override
 	public String toString() {
 		return "Product [id=" + id + ", productSubGroup=" + productSubGroup + ", name=" + name + ", description="
 				+ description + ", price=" + price + ", agent=" + agent + ", agentCommissionRate=" + agentCommissionRate
-				+ ", needFirstAidVideo=" + needFirstAidVideo + "]";
+				+ ", needFirstAidVideo=" + needFirstAidVideo + ", stockCount=" + stockCount + "]";
 	}
 
 }
