@@ -18,6 +18,7 @@ public class Member {
 	private String surname;
 	private String address;
 	private Long telephone;
+	private String emailAddress;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
@@ -85,11 +86,20 @@ public class Member {
 	public void setMemberStatus(MemberStatus memberStatus) {
 		this.memberStatus = memberStatus;
 	}
+	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
 
 	@Override
 	public String toString() {
 		return "Member [id=" + id + ", name=" + name + ", surname=" + surname + ", address=" + address + ", telephone="
-				+ telephone + ", memberType=" + memberType + ", memberStatus=" + memberStatus + "]";
+				+ telephone + ", emailAddress=" + emailAddress + ", memberType=" + memberType + ", memberStatus="
+				+ memberStatus + "]";
 	}
 	
 }

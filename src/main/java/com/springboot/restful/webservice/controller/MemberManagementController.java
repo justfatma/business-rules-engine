@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.springboot.restful.webservice.model.Member;
+import com.springboot.restful.webservice.serviceimpl.EmailServiceImpl;
 import com.springboot.restful.webservice.serviceimpl.MemberServiceImpl;
 
 @RestController
@@ -19,6 +20,9 @@ public class MemberManagementController {
 	
 	@Autowired
 	private MemberServiceImpl memberServiceImpl;
+	
+	@Autowired
+	private EmailServiceImpl emailServiceImpl;
 	
 	@GetMapping("/members")
     public List<Member> getMembers() {	
@@ -41,13 +45,23 @@ public class MemberManagementController {
 	@PutMapping("/activate/{memberId}")
 	public String activateMembership(@PathVariable Long memberId) {
 				
-		return memberServiceImpl.activateMembership(memberId);
+		String returnMessage = memberServiceImpl.activateMembership(memberId);
+		if (returnMessage.equals("Membership is activated successfully.")) {
+			Member member = memberServiceImpl.getMemberById(memberId).get();
+			emailServiceImpl.sendEmailForMembershipActivation(member.getEmailAddress(), member.getName());
+		}
+		return returnMessage;
 	}
 	
 	@PutMapping("/upgrade/{memberId}")
 	public String upgradeMembership(@PathVariable Long memberId) {
 				
-		return memberServiceImpl.upgradeMembership(memberId);
+		String returnMessage = memberServiceImpl.upgradeMembership(memberId);
+		if(returnMessage.equals("Membership is upgrated successfully.")) {
+			Member member = memberServiceImpl.getMemberById(memberId).get();
+			emailServiceImpl.sendEmailForMembershipUpgrade(member.getEmailAddress(), member.getName());
+		}
+		return returnMessage;
 	}
 
 }

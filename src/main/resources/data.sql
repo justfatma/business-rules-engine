@@ -32,16 +32,16 @@ insert into product_sub_group (id, name, description, product_group_id) values (
 insert into member_type (id, name, description) values (1, 'Standart', 'Standart Membership');
 insert into member_type (id, name, description) values (2, 'Premium', 'Premium Membership');
 /******************************************************************************************************************************/
-insert into member (id, name, surname, address, telephone, member_type_id, member_status) values (1, 'Tom', 'Darren', 'London', 04324525567, 1, 'ACTIVE');
-insert into member (id, name, surname, address, telephone, member_type_id, member_status) values (2, 'Laura', 'Benn', 'Maidenhead', 34524525567, 1, 'PASSIVE');
-insert into member (id, name, surname, address, telephone, member_type_id, member_status) values (3, 'Claire', 'Brown', 'Reading', 87564525567, 1, 'PASSIVE');
-insert into member (id, name, surname, address, telephone, member_type_id, member_status) values (4, 'Michael', 'Hanks', 'Manchester', 92844525567, 1, 'ACTIVE');
-insert into member (id, name, surname, address, telephone, member_type_id, member_status) values (5, 'Susan', 'Chan', 'Twford', 88764525567, 2, 'ACTIVE');
-insert into member (id, name, surname, address, telephone, member_type_id, member_status) values (6, 'Jack', 'Simpson', 'Liverpool', 09824525567, 1, 'PASSIVE');
-insert into member (id, name, surname, address, telephone, member_type_id, member_status) values (7, 'Jill', 'Jackson', 'London', 75624525567, 1, 'ACTIVE');
-insert into member (id, name, surname, address, telephone, member_type_id, member_status) values (8, 'Anna', 'Roy', 'Newbury', 55424525567, 1, 'PASSIVE');
-insert into member (id, name, surname, address, telephone, member_type_id, member_status) values (9, 'Sam', 'Ford', 'Oxford', 66724525567, 2, 'ACTIVE');
-insert into member (id, name, surname, address, telephone, member_type_id, member_status) values (10, 'Bruice', 'Souza', 'Edinburg', 22524525567, 1, 'ACTIVE');
+insert into member (id, name, surname, address, telephone, member_type_id, member_status, email_address) values (1, 'Tom', 'Darren', 'London', 04324525567, 1, 'ACTIVE', 'tasatan@gmail.com');
+insert into member (id, name, surname, address, telephone, member_type_id, member_status, email_address) values (2, 'Laura', 'Benn', 'Maidenhead', 34524525567, 1, 'PASSIVE', 'tasatan@gmail.com');
+insert into member (id, name, surname, address, telephone, member_type_id, member_status, email_address) values (3, 'Claire', 'Brown', 'Reading', 87564525567, 1, 'PASSIVE', 'tasatan@gmail.com');
+insert into member (id, name, surname, address, telephone, member_type_id, member_status, email_address) values (4, 'Michael', 'Hanks', 'Manchester', 92844525567, 1, 'ACTIVE', 'tasatan@gmail.com');
+insert into member (id, name, surname, address, telephone, member_type_id, member_status, email_address) values (5, 'Susan', 'Chan', 'Twford', 88764525567, 2, 'ACTIVE', 'tasatan@gmail.com');
+insert into member (id, name, surname, address, telephone, member_type_id, member_status, email_address) values (6, 'Jack', 'Simpson', 'Liverpool', 09824525567, 1, 'PASSIVE', 'tasatan@gmail.com');
+insert into member (id, name, surname, address, telephone, member_type_id, member_status, email_address) values (7, 'Jill', 'Jackson', 'London', 75624525567, 1, 'ACTIVE', 'tasatan@gmail.com');
+insert into member (id, name, surname, address, telephone, member_type_id, member_status, email_address) values (8, 'Anna', 'Roy', 'Newbury', 55424525567, 1, 'PASSIVE', 'tasatan@gmail.com');
+insert into member (id, name, surname, address, telephone, member_type_id, member_status, email_address) values (9, 'Sam', 'Ford', 'Oxford', 66724525567, 2, 'ACTIVE', 'tasatan@gmail.com');
+insert into member (id, name, surname, address, telephone, member_type_id, member_status, email_address) values (10, 'Bruice', 'Souza', 'Edinburg', 22524525567, 1, 'ACTIVE', 'tasatan@gmail.com');
 /******************************************************************************************************************************/
 insert into agent (id, name, address, telephone) values (1, 'Agent1', 'Slough', 11124525567);
 insert into agent (id, name, address, telephone) values (2, 'Agent2', 'Timperley', 22224525567);

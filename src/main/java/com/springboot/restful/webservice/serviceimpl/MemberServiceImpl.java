@@ -57,6 +57,7 @@ public class MemberServiceImpl implements MemberService{
 		}else {
 			member.setMemberStatus(MemberStatus.ACTIVE);
 			memberRepository.save(member);
+			
 			return "Membership is activated successfully.";
 		}
 	
