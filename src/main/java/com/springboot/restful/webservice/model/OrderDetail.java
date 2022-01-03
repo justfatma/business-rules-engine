@@ -15,7 +15,7 @@ public class OrderDetail {
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JsonIgnore
-	private Order order;
+	private MemberOrder memberOrder;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JsonIgnore
@@ -28,20 +28,11 @@ public class OrderDetail {
 		super();
 	}
 
+	public void setMemberOrder(MemberOrder order) {
+		this.memberOrder = order;
+	}
+
 	
-	public Order getOrder() {
-		return order;
-	}
-
-	public void setOrder(Order order) {
-		this.order = order;
-	}
-
-	public Product getProduct() {
-		return product;
-	}
-
-
 	public void setProduct(Product product) {
 		this.product = product;
 	}
@@ -70,21 +61,19 @@ public class OrderDetail {
 		this.agentCommissionAmount = agentCommissionAmount;
 	}
 
-	
 	public Long getId() {
 		return id;
 	}
-
 
 	public void setId(Long id) {
 		this.id = id;
 	}
 
-
 	@Override
 	public String toString() {
-		return "OrderDetail [id=" + id + ", order=" + order + ", product=" + product + ", orderCount=" + orderCount
-				+ ", amount=" + amount + ", agentCommissionAmount=" + agentCommissionAmount + "]";
+		return "OrderDetail [id=" + id + ", memberOrder=" + memberOrder + ", product=" + product + ", orderCount="
+				+ orderCount + ", amount=" + amount + ", agentCommissionAmount=" + agentCommissionAmount + "]";
 	}
+	
 
 }

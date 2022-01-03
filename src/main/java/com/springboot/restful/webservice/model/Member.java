@@ -1,6 +1,8 @@
 package com.springboot.restful.webservice.model;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -19,6 +21,8 @@ public class Member {
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JsonIgnore
 	private MemberType memberType;
+	
+	@Enumerated(EnumType.STRING)
 	private MemberStatus memberStatus;
 
 	public Member() {

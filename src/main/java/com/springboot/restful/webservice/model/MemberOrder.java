@@ -1,19 +1,21 @@
 package com.springboot.restful.webservice.model;
 
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import java.sql.Date;
-import java.sql.Timestamp;
-
 @Entity
-public class Order {
+public class MemberOrder {
 
 	@Id
 	private Long id;
@@ -21,16 +23,23 @@ public class Order {
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JsonIgnore
 	private Member member;
+	
 	private Float totalAmount;
 	private Date orderDate;
 	private Timestamp orderTime;
 	
 	@Enumerated(EnumType.STRING)
 	private PaymentMethod paymentMethod;
+	
 	private Date deliveryDate;
+	
+	@Enumerated(EnumType.STRING)
 	private OrderStatus orderStatus;
 	
-	public Order() {
+	@OneToMany(mappedBy="memberOrder")
+	private List<OrderDetail> orderDetails;
+	
+	public MemberOrder() {
 		super();
 	}
 	
@@ -43,11 +52,6 @@ public class Order {
 	}
 		
 	
-	public Member getMember() {
-		return member;
-	}
-
-
 	public void setMember(Member member) {
 		this.member = member;
 	}
@@ -100,11 +104,21 @@ public class Order {
 	}
 
 
+	public List<OrderDetail> getOrderDetails() {
+		return orderDetails;
+	}
+
+
+	public void setOrderDetails(List<OrderDetail> orderDetails) {
+		this.orderDetails = orderDetails;
+	}
+
+
 	@Override
 	public String toString() {
 		return "Order [id=" + id + ", member=" + member + ", totalAmount=" + totalAmount + ", orderDate=" + orderDate
 				+ ", orderTime=" + orderTime + ", paymentMethod=" + paymentMethod + ", deliveryDate=" + deliveryDate
-				+ ", orderStatus=" + orderStatus + "]";
+				+ ", orderStatus=" + orderStatus + ", orderDetails=" + orderDetails + "]";
 	}
 
 	
