@@ -17,6 +17,7 @@ import com.springboot.restful.webservice.model.Product;
 import com.springboot.restful.webservice.serviceimpl.MemberOrderServiceImpl;
 import com.springboot.restful.webservice.serviceimpl.ProductServiceImpl;
 
+
 @RestController
 public class OrderManagementController {
 
@@ -25,6 +26,7 @@ public class OrderManagementController {
 	
 	@Autowired
 	private ProductServiceImpl productServiceImpl;
+	
 	
 	@GetMapping("/orders")
     public List<MemberOrder> getOrders() {	
@@ -47,8 +49,9 @@ public class OrderManagementController {
     @PostMapping("/order")
     public String addMemberOrder(@RequestBody MemberOrder memberOrder) {
     	
-    	Long addedOrderId= memberOrderServiceImpl.addMemberOrder(memberOrder);
-    	return "Order created successfully. Order Id: " + addedOrderId;
+    	String returnMsg= memberOrderServiceImpl.addMemberOrder(memberOrder);
+        	
+    	return returnMsg;
     }
     
     @GetMapping("/products")

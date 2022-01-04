@@ -9,5 +9,5 @@ public interface MemberOrderService {
 	
 	public Optional<MemberOrder> getMemberOrderById(Long memberOrderId);
 	public List<MemberOrder> getMemberOrderList();
-	public Long addMemberOrder(MemberOrder memberOrder);
+	public String addMemberOrder(MemberOrder memberOrder);
 }

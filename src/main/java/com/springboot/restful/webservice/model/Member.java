@@ -26,7 +26,8 @@ public class Member {
 	
 	@Enumerated(EnumType.STRING)
 	private MemberStatus memberStatus;
-
+	
+	
 	public Member() {
 		super();
 	}

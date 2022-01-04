@@ -2,7 +2,7 @@ insert into product_group (id, name, description, is_physical) values (1, 'Cloth
 insert into product_group (id, name, description, is_physical) values (2, 'Shoes', 'Shoes Category', true);
 insert into product_group (id, name, description, is_physical) values (3, 'Book', 'Book Category', true);
 insert into product_group (id, name, description, is_physical) values (4, 'Ebook', 'Ebook Category', false);
-insert into product_group (id, name, description, is_physical) values (5, 'Video', 'Video Category', false);
+insert into product_group (id, name, description, is_physical) values (5, 'Video', 'Video Category', true);
 /******************************************************************************************************************************/
 insert into product_sub_group (id, name, description, product_group_id) values (1, 'Dress', 'Kinds of Dresses', 1);
 insert into product_sub_group (id, name, description, product_group_id) values (2, 'Jean', 'Kinds of Jeans', 1);
@@ -121,15 +121,10 @@ values (32, 'Be A Master At Cooking', 'Advanced', 20, 20.00, true, 0, 10, 0);
 /******************************************************************************************************************************/
 insert into member_order (id, member_id, order_date, order_time, order_status,  payment_method, total_amount, delivery_date) 
 values(111111, 1, '2022-01-02','2022-01-02 19:06:14.414971','WAS_DELIVERED', 'CREDIT_CART', 50.00, '2022-01-03');
-insert into member_order (id, member_id, order_date, order_time, order_status,  payment_method, total_amount) 
-values(222222, 7, '2022-01-03','2022-01-03 09:06:14.414971','ORDER_IS_BEING_PREPARED', 'PAY_PAL', 95.00);
 /******************************************************************************************************************************/
 insert into order_detail (id, member_order_id, product_id, order_count, amount, agent_commission_amount)
 values (99990, 111111, 7, 1, 130.00, 13.00);
 insert into order_detail (id, member_order_id, product_id, order_count, amount, agent_commission_amount)
 values (99991, 111111, 10, 1, 45.00, 4.50);
-insert into order_detail (id, member_order_id, product_id, order_count, amount, agent_commission_amount)
-values (99992, 222222, 6, 2, 80.00, 16.00);
-insert into order_detail (id, member_order_id, product_id, order_count, amount, agent_commission_amount)
-values (99993, 222222, 30, 1, 15.00, 0.00);
+
 

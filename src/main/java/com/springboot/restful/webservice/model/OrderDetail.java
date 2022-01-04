@@ -20,8 +20,7 @@ public class OrderDetail {
 	@JsonIgnore
 	private MemberOrder memberOrder;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+	@ManyToOne
 	private Product product;
 	private Long orderCount;
 	private Float amount;

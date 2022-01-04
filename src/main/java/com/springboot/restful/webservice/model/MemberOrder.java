@@ -4,6 +4,7 @@ import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -13,6 +14,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
@@ -22,8 +24,8 @@ public class MemberOrder {
 	@GeneratedValue
 	private Long id;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+	
+	@ManyToOne(fetch = FetchType.EAGER)
 	private Member member;
 	
 	private Float totalAmount;
@@ -38,7 +40,7 @@ public class MemberOrder {
 	@Enumerated(EnumType.STRING)
 	private OrderStatus orderStatus;
 	
-	@OneToMany(mappedBy="memberOrder")
+	@OneToMany(mappedBy="memberOrder", fetch = FetchType.EAGER)
 	private List<OrderDetail> orderDetails;
 	
 	public MemberOrder() {
