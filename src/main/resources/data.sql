@@ -55,81 +55,81 @@ insert into agent (id, name, address, telephone) values (9, 'Agent9', 'Maidenhea
 insert into agent (id, name, address, telephone) values (10, 'Agent10', 'Calcot', 10024525567);
 /******************************************************************************************************************************/
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (1, 'Red Long Dress', 'Viscose', 1, 50.00, false, 35, 5, 10);
+values (1, 'Red Long Dress', 'Viscose', 1, 50.00, false, 35, 5, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (2, 'Blue Medium Dress', 'Silk', 1, 90.00, false, 23, 4, 10);
+values (2, 'Blue Medium Dress', 'Silk', 1, 90.00, false, 23, 4, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (3, 'Green Dress', 'Cotton', 1, 60.00, false, 17, 4, 20);
+values (3, 'Green Dress', 'Cotton', 1, 60.00, false, 17, 4, 0.20);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (7, 'Winter Suit', 'Wool', 4, 130.00, false, 11, 1, 10);
+values (7, 'Winter Suit', 'Wool', 4, 130.00, false, 11, 1, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (8, 'Summer Suit', 'Linen', 4, 150.00, false, 22, 1, 10);
+values (8, 'Summer Suit', 'Linen', 4, 150.00, false, 22, 1, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (9, 'Sport Suit', 'Cotton', 4, 140.00, false, 77, 5, 20);
+values (9, 'Sport Suit', 'Cotton', 4, 140.00, false, 77, 5, 0.20);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (4, 'Yellow T-shirt', 'Viscose', 5, 30.00, false, 35, 5, 10);
+values (4, 'Yellow T-shirt', 'Viscose', 5, 30.00, false, 35, 5, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (5, 'Pink T-shirt', 'Silk', 5, 60.00, false, 23, 5, 10);
+values (5, 'Pink T-shirt', 'Silk', 5, 60.00, false, 23, 5, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (6, 'Black T-shirt', 'Cotton', 5, 40.00, false, 17, 4, 20);
+values (6, 'Black T-shirt', 'Cotton', 5, 40.00, false, 17, 4, 0.20);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (10, 'Black Boot', 'Without heels', 6, 45.00, false, 63, 7, 10);
+values (10, 'Black Boot', 'Without heels', 6, 45.00, false, 63, 7, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (11, 'Brown Boot', 'Leather', 6, 80.00, false, 51, 7, 20);
+values (11, 'Brown Boot', 'Leather', 6, 80.00, false, 51, 7, 0.20);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (12, 'Colourful Sandal', 'Leather', 7, 30.00, false, 21, 7, 10);
+values (12, 'Colourful Sandal', 'Leather', 7, 30.00, false, 21, 7, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (13, 'Grey Casual Shoes', 'Leather', 8, 80.00, false, 19, 7, 10);
+values (13, 'Grey Casual Shoes', 'Leather', 8, 80.00, false, 19, 7, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (14, 'White Sneaker Shoes', 'Puma', 9, 50.00, false, 11, 1, 10);
+values (14, 'White Sneaker Shoes', 'Puma', 9, 50.00, false, 11, 1, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
 values (15, 'Literature Book 1', 'Published in 2020', 10, 10.00, false, 6, 2, 10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (16, 'History Book1', 'Written by Alex', 11, 15.00, false, 23, 2, 10);
+values (16, 'History Book1', 'Written by Alex', 11, 15.00, false, 23, 2, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (17, 'History Book2', 'Published in 1986', 11, 10.00, false, 37, 3, 10);
+values (17, 'History Book2', 'Published in 1986', 11, 10.00, false, 37, 3, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (18, 'Politics Book1', 'Puma', 12, 20.00, false, 11, 3, 10);
+values (18, 'Politics Book1', 'Puma', 12, 20.00, false, 11, 3, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (19, 'The Snowman', 'Level1', 13, 5.00, false, 17, 3, 10);
+values (19, 'The Snowman', 'Level1', 13, 5.00, false, 17, 3, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (20, 'Waffle and Bella', 'Level2', 13, 5.00, false, 19, 2, 10);
+values (20, 'Waffle and Bella', 'Level2', 13, 5.00, false, 19, 2, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (21, 'Design Patterns in Java', 'Written By David', 14, 50.00, false, 0, 3, 10);
+values (21, 'Design Patterns in Java', 'Written By David', 14, 50.00, false, 0, 3, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (22, 'PHP', 'Published in 2021', 14, 40.00, false, 0, 2, 10);
+values (22, 'PHP', 'Published in 2021', 14, 40.00, false, 0, 2, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (23, 'Maths', 'Preparing to the exam', 15, 10.00, false, 0, 2, 10);
+values (23, 'Maths', 'Preparing to the exam', 15, 10.00, false, 0, 2, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (24, 'English Grammer', 'Published in 2015', 15, 20.00, false, 0, 2, 10);
+values (24, 'English Grammer', 'Published in 2015', 15, 20.00, false, 0, 2, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (25, 'Vegatarian Diet', 'Ebook', 16, 10.00, false, 0, 6, 10);
+values (25, 'Vegatarian Diet', 'Ebook', 16, 10.00, false, 0, 6, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (26, 'The Pursuit of Happyness', 'Will Smith', 17, 10.00, false, 0, 9, 10);
+values (26, 'The Pursuit of Happyness', 'Will Smith', 17, 10.00, false, 0, 9, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (27, 'John Wick', 'Keanu Reeves', 17, 10.00, false, 0, 9, 10);
+values (27, 'John Wick', 'Keanu Reeves', 17, 10.00, false, 0, 9, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (28, 'Rockabye', 'Anne Marie', 18, 10.00, false, 0, 8, 10);
+values (28, 'Rockabye', 'Anne Marie', 18, 10.00, false, 0, 8, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (29, 'Learning to Ski', 'Popular Ski Video', 19, 15.00, true, 0, 8, 10);
+values (29, 'Learning to Ski', 'Popular Ski Video', 19, 15.00, true, 0, 8, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (30, 'How to Dive', 'By Expert Trainer', 19, 15.00, true, 0, 10, 10);
+values (30, 'How to Dive', 'By Expert Trainer', 19, 15.00, true, 0, 10, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (31, 'Learning to Cook', 'Beginner', 20, 20.00, true, 0, 10, 10);
+values (31, 'Learning to Cook', 'Beginner', 20, 20.00, true, 0, 10, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (32, 'Be A Master At Cooking', 'Advanced', 20, 20.00, true, 0, 10, 10);
+values (32, 'Be A Master At Cooking', 'Advanced', 20, 20.00, true, 0, 10, 0);
 /******************************************************************************************************************************/
 insert into member_order (id, member_id, order_date, order_time, order_status,  payment_method, total_amount, delivery_date) 
-values(1, 1, '2022-01-02','2022-01-02 19:06:14.414971','WAS_DELIVERED', 'CREDIT_CART', 50.00, '2022-01-03');
+values(111111, 1, '2022-01-02','2022-01-02 19:06:14.414971','WAS_DELIVERED', 'CREDIT_CART', 50.00, '2022-01-03');
 insert into member_order (id, member_id, order_date, order_time, order_status,  payment_method, total_amount) 
-values(2, 6, '2022-01-03','2022-01-03 09:06:14.414971','ORDER_IS_BEING_PREPARED', 'PAY_PAL', 50.00);
+values(222222, 7, '2022-01-03','2022-01-03 09:06:14.414971','ORDER_IS_BEING_PREPARED', 'PAY_PAL', 95.00);
 /******************************************************************************************************************************/
 insert into order_detail (id, member_order_id, product_id, order_count, amount, agent_commission_amount)
-values (1, 1, 7, 1, 130.00, 13.00);
+values (99990, 111111, 7, 1, 130.00, 13.00);
 insert into order_detail (id, member_order_id, product_id, order_count, amount, agent_commission_amount)
-values (2, 1, 10, 1, 45.00, 4.50);
+values (99991, 111111, 10, 1, 45.00, 4.50);
 insert into order_detail (id, member_order_id, product_id, order_count, amount, agent_commission_amount)
-values (3, 2, 6, 2, 80.00, 16.00);
+values (99992, 222222, 6, 2, 80.00, 16.00);
 insert into order_detail (id, member_order_id, product_id, order_count, amount, agent_commission_amount)
-values (4, 2, 30, 1, 15.00, 1.50);
+values (99993, 222222, 30, 1, 15.00, 0.00);
 

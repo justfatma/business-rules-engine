@@ -8,20 +8,22 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 public class MemberOrder {
 
 	@Id
+	@GeneratedValue
 	private Long id;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
-	@JsonIgnore
+	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 	private Member member;
 	
 	private Float totalAmount;
@@ -52,6 +54,11 @@ public class MemberOrder {
 	}
 		
 	
+	public Member getMember() {
+		return member;
+	}
+
+
 	public void setMember(Member member) {
 		this.member = member;
 	}
@@ -116,9 +123,9 @@ public class MemberOrder {
 
 	@Override
 	public String toString() {
-		return "Order [id=" + id + ", member=" + member + ", totalAmount=" + totalAmount + ", orderDate=" + orderDate
-				+ ", orderTime=" + orderTime + ", paymentMethod=" + paymentMethod + ", deliveryDate=" + deliveryDate
-				+ ", orderStatus=" + orderStatus + ", orderDetails=" + orderDetails + "]";
+		return "MemberOrder [id=" + id + ", member=" + member + ", totalAmount=" + totalAmount + ", orderDate="
+				+ orderDate + ", orderTime=" + orderTime + ", paymentMethod=" + paymentMethod + ", deliveryDate="
+				+ deliveryDate + ", orderStatus=" + orderStatus + ", orderDetails=" + orderDetails + "]";
 	}
 
 	

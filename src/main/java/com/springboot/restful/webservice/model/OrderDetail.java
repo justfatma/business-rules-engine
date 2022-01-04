@@ -2,15 +2,18 @@ package com.springboot.restful.webservice.model;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 public class OrderDetail {
 	
 	@Id
+	@GeneratedValue
 	private Long id;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
@@ -18,7 +21,7 @@ public class OrderDetail {
 	private MemberOrder memberOrder;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
-	@JsonIgnore
+	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 	private Product product;
 	private Long orderCount;
 	private Float amount;
@@ -33,6 +36,12 @@ public class OrderDetail {
 	}
 
 	
+	
+
+	public Product getProduct() {
+		return product;
+	}
+
 	public void setProduct(Product product) {
 		this.product = product;
 	}
@@ -74,6 +83,8 @@ public class OrderDetail {
 		return "OrderDetail [id=" + id + ", memberOrder=" + memberOrder + ", product=" + product + ", orderCount="
 				+ orderCount + ", amount=" + amount + ", agentCommissionAmount=" + agentCommissionAmount + "]";
 	}
+
+	
 	
 
 }
