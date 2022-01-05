@@ -78,3 +78,9 @@ Information on whether a product requires a free first aid video is kept in the 
 Commission rate information is kept on PRODUCT table, AGENT_COMMISSION_RATE column. 
 The amount to be paid to the agent of the ordered product is kept on ORDER_DETAIL table, AGENT_COMMISSION_AMOUNT column.
 If commission rate information is zero (for example for Ebooks) for an ordered product, AGENT_COMMISSION_AMOUNT will be zero.
+
+**For information:** 
+- Only MEMBER_ORDER, ORDER_DETAIL, PACKING_SLIP table ids are generated automatically. 
+- To update an information belongs to other tables **data.sql** file in the project can be used. Or the desired update can be done in H2 database.
+
+
