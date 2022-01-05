@@ -83,7 +83,7 @@ values (13, 'Grey Casual Shoes', 'Leather', 8, 80.00, false, 19, 7, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
 values (14, 'White Sneaker Shoes', 'Puma', 9, 50.00, false, 11, 1, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (15, 'Literature Book 1', 'Published in 2020', 10, 10.00, false, 6, 2, 10);
+values (15, 'Literature Book 1', 'Published in 2020', 10, 10.00, false, 6, 2, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
 values (16, 'History Book1', 'Written by Alex', 11, 15.00, false, 23, 2, 0.10);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
@@ -105,19 +105,19 @@ values (24, 'English Grammer', 'Published in 2015', 15, 20.00, false, 0, 2, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
 values (25, 'Vegatarian Diet', 'Ebook', 16, 10.00, false, 0, 6, 0);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (26, 'The Pursuit of Happyness', 'Will Smith', 17, 10.00, false, 0, 9, 0);
+values (26, 'The Pursuit of Happyness', 'Will Smith', 17, 10.00, false, 0, 9, 0.15);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (27, 'John Wick', 'Keanu Reeves', 17, 10.00, false, 0, 9, 0);
+values (27, 'John Wick', 'Keanu Reeves', 17, 10.00, false, 0, 9, 0.15);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (28, 'Rockabye', 'Anne Marie', 18, 10.00, false, 0, 8, 0);
+values (28, 'Rockabye', 'Anne Marie', 18, 10.00, false, 0, 8, 0.15);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (29, 'Learning to Ski', 'Popular Ski Video', 19, 15.00, true, 0, 8, 0);
+values (29, 'Learning to Ski', 'Popular Ski Video', 19, 15.00, true, 0, 8, 0.15);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (30, 'How to Dive', 'By Expert Trainer', 19, 15.00, true, 0, 10, 0);
+values (30, 'How to Dive', 'By Expert Trainer', 19, 15.00, true, 0, 10, 0.15);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (31, 'Learning to Cook', 'Beginner', 20, 20.00, true, 0, 10, 0);
+values (31, 'Learning to Cook', 'Beginner', 20, 20.00, true, 0, 10, 0.15);
 insert into product (id, name, description, product_sub_group_id, price, need_first_aid_video, stock_count, agent_id, agent_commission_rate) 
-values (32, 'Be A Master At Cooking', 'Advanced', 20, 20.00, true, 0, 10, 0);
+values (32, 'Be A Master At Cooking', 'Advanced', 20, 20.00, true, 0, 10, 0.15);
 /******************************************************************************************************************************/
 insert into member_order (id, member_id, order_date, order_time, order_status,  payment_method, total_amount, delivery_date) 
 values(111111, 1, '2022-01-02','2022-01-02 19:06:14.414971','WAS_DELIVERED', 'CREDIT_CART', 50.00, '2022-01-03');
